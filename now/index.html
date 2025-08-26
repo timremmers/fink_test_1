@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Blog — What's in my now</title>
+    <link rel="stylesheet" href="/fink_test_1/styles.css">
+  
+</head>
+<body>
+<header class="site-header">
+  <a class="home" href="/fink_test_1/index.html">Home</a>
+  <nav class="pages">
+    <a href="/fink_test_1/subscribe/index.html">Subscribe</a><a href="/fink_test_1/now/index.html">What's in my now</a><a href="/fink_test_1/about/index.html">About this site</a>
+  </nav>
+</header>
+
+<nav class="tag-cloud">
+  <a class="tag" href="/fink_test_1/tags/drie/" title="2 posts">#drie</a> <a class="tag" href="/fink_test_1/tags/een-tag-met-spaties/" title="1 posts">#een tag met spaties</a> <a class="tag" href="/fink_test_1/tags/hello/" title="3 posts">#hello</a> <a class="tag" href="/fink_test_1/tags/markdown/" title="3 posts">#markdown</a>
+</nav>
+
+
+<main>
+  <h1>What's in my now</h1>
+  <article><h1 data-heading="Welkom bij de gebruikershandleiding" dir="auto">Welkom bij de gebruikershandleiding</h1>
+<p dir="auto">Deze pagina bevat een overzicht van de belangrijkste functies van deze website.<br>
+<strong>Let op:</strong> dit is een <em>voorbeeldpagina</em> om complexe Markdown te demonstreren.</p>
+<h2 data-heading="Inhoudsopgave" dir="auto">Inhoudsopgave</h2>
+<ol>
+<li dir="auto">Introductie</li>
+<li dir="auto">Navigatie</li>
+<li dir="auto">Inhoud schrijven</li>
+<li dir="auto">Publicatieproces</li>
+<li dir="auto">Veelgestelde vragen</li>
+</ol>
+<hr>
+<h2 data-heading="1. Introductie" dir="auto">1. Introductie</h2>
+<p dir="auto">De website is opgebouwd met behulp van een eenvoudige static site generator geschreven in Python.<br>
+Content wordt geschreven in Markdown <sup data-footnote-id="fnref-1-0b6c2871211387f4" class="footnote-ref" id="fnref-1-0b6c2871211387f4"><a data-footref="1" href="#fn-1-0b6c2871211387f4" class="footnote-link" target="_blank" rel="noopener nofollow">[1]</a></sup> en voorzien van YAML frontmatter.</p>
+<blockquote dir="auto">
+<p>! here is the spoiler content<br>
+!<br>
+! it will be hidden</p>
+</blockquote>
+<h2 data-heading="2. Navigatie" dir="auto">2. Navigatie</h2>
+<p dir="auto">Gebruik het navigatiemenu bovenaan elke pagina om snel toegang te krijgen tot belangrijke onderdelen van de site.</p>
+<p dir="auto"><strong>Voorbeelden van vaste pagina's:</strong></p>
+<ul>
+<li dir="auto">Over deze site</li>
+<li dir="auto">Contact</li>
+<li dir="auto">Gebruikershandleiding</li>
+</ul>
+<h2 data-heading="3. Inhoud schrijven" dir="auto">3. Inhoud schrijven</h2>
+<p dir="auto">Je kunt inhoud toevoegen in de map <code>posts/</code> (voor blogposts) of <code>pages/</code> (voor statische pagina’s).</p>
+<h2 data-heading="Task list" dir="auto">Task list</h2>
+<ul class="contains-task-list">
+<li data-task="x" class="task-list-item is-checked" dir="auto"><input checked="" type="checkbox" class="task-list-item-checkbox">item 1</li>
+<li data-task="" class="task-list-item" dir="auto"><input type="checkbox" class="task-list-item-checkbox">item 2</li>
+</ul>
+<p dir="auto">Een voorbeeld van YAML frontmatter:</p>
+<pre class="language-yaml"><code class="language-yaml is-loaded"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> Mijn eerste blogpost
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2025-07-15</span>
+<span class="token key atrule">tags</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"#intro"</span><span class="token punctuation">,</span> <span class="token string">"#handleiding"</span><span class="token punctuation">]</span>
+<span class="token key atrule">slug</span><span class="token punctuation">:</span> mijn<span class="token punctuation">-</span>eerste<span class="token punctuation">-</span>post
+<span class="token key atrule">summary</span><span class="token punctuation">:</span> Een korte introductie tot mijn blog.
+<span class="token punctuation">---</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre>
+<p dir="auto">een</p>
+<pre class="language-python"><code class="language-python is-loaded"><span class="token keyword">def</span> <span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hello world!"</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre>
+<p dir="auto">twee</p>
+<p dir="auto"><span alt="Voorbeeldafbeelding" src="voorbeeld.jpg" class="internal-embed"></span></p>
+<h2 data-heading="Vergelijking static site generators" dir="auto">Vergelijking static site generators</h2>
+<p dir="auto">Hieronder zie je een vergelijking tussen enkele bekende static site generators:</p>
+<table>
+<thead>
+<tr>
+<th>Generator</th>
+<th>Taal</th>
+<th>Type</th>
+<th>Snelheid</th>
+<th>Leercurve</th>
+<th>Ondersteuning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jekyll</td>
+<td>Ruby</td>
+<td>File-based</td>
+<td>★★★☆☆</td>
+<td>★★☆☆☆</td>
+<td>Goed</td>
+</tr>
+<tr>
+<td>Hugo</td>
+<td>Go</td>
+<td>File-based</td>
+<td>★★★★★</td>
+<td>★★★☆☆</td>
+<td>Uitstekend</td>
+</tr>
+<tr>
+<td>Pelican</td>
+<td>Python</td>
+<td>File-based</td>
+<td>★★★★☆</td>
+<td>★★★☆☆</td>
+<td>Goed</td>
+</tr>
+<tr>
+<td>Publii</td>
+<td>GUI (JS)</td>
+<td>GUI + local</td>
+<td>★★★★☆</td>
+<td>★☆☆☆☆</td>
+<td>Beperkt</td>
+</tr>
+<tr>
+<td>Eigen SSG</td>
+<td>Pythonista</td>
+<td>Custom</td>
+<td>★★★☆☆</td>
+<td>★★★★☆</td>
+<td>Zelfbeheer</td>
+</tr>
+</tbody>
+</table>
+<p dir="auto">Nog een tabel:</p>
+<table>
+<thead>
+<tr>
+<th>een</th>
+<th>twee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hoi</td>
+<td>dag</td>
+</tr>
+</tbody>
+</table>
+<h2 data-heading="Voetnoten" dir="auto">Voetnoten</h2>
+
+
+<section class="footnotes"><hr><ol>
+<li data-footnote-id="fn-1-0b6c2871211387f4" id="fn-1-0b6c2871211387f4" dir="auto"><p>De voetnoot zelf.<a href="#fnref-1-0b6c2871211387f4" class="footnote-backref footnote-link" target="_blank" rel="noopener nofollow">↩︎</a></p></li>
+</ol></section></article>
+</main>
+<footer class="site-footer">
+  <p>&copy; 2025 My Blog</p>
+</footer>
+</body>
+</html>
+
